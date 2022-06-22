@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&family=Roboto+Mono:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  flex-direction: column;
+  background: rgb(207, 81, 84);
+}
+
+body input {
+  margin: 25px;
+  width: 400px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.606);
+  outline: none;
+  border: none;
+  border-left: 4px solid orange;
+  border-right: 4px solid orange;
+  border-bottom: 4px solid orange;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+  padding: 25px;
+}
+
+body input::placeholder {
+  color: black;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.662);
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.name {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-weight: 900;
+  border-top: 4px ridge rgba(0, 0, 0, 0.442);
+}
+
+.id {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  background-color: rgb(233, 182, 64);
+  padding: 15px;
+}
+.box img {
+  width: 300px;
+  height: 300px;
+
+  padding: 10px;
+  animation: mymove 3s infinite;
+}
+
+@keyframes mymove {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.02);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
